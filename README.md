@@ -48,6 +48,5 @@ This image gallery was inspired by various open-source projects and tutorials av
 
 If you have any questions, suggestions, or feedback, please feel free to contact the project maintainer:
 
-Your Name
 Email: aryahrmth@gmail.com
 GitHub: [arun](https://github.com/arun-h)
