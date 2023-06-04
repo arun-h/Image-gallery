@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <img src="./7.jpg" alt="Avengers" class="mainimage">
+  <div class="smallimages">
+    <img src="./1.jpg" alt="avengers">
+    <img src="./2.jpg" alt="spiderman">
+    <img src="./3.jpg" alt="DC">
+    <img src="./4.jpg" alt="Black panther">
+    <img src="./5.jpg" alt="ghostrider">
+    <img src="./6.jpg" alt="Captain america">
+  </div>
+</div>
+<script>
+  let smallimages = document.querySelectorAll('.smallimages img')
+  let mainimage = document.querySelector('.mainimage')
+  function active(){
+    smallimages.forEach(img=>img.classList.remove('active'))
+    this.classList.add('active')
+    mainimage.src=this.src
+  }
+  smallimages.forEach(img=>img.addEventListener('click',active))
+</script>
+</body>
+</html>
